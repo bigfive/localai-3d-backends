@@ -1,0 +1,8 @@
+.venv/
+.runtime/
+runtime/
+runs/
+__pycache__/
+*.egg-info/
+build/
+.DS_Store

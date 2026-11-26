@@ -1,0 +1,13 @@
+name: trellis-clean
+backend: trellis-clean
+known_usecases:
+  - 3d
+description: "TRELLIS complete mesh: voxel reconstruction, QSlim 10k, smooth normals, baked colour and normal maps. Auto/512 (default) or1024. Shape steps x1000: QSlim triangle target(default10=10000). TRELLIS sampling default12 (API configurable). Material steps x128: texture size(default16=2048). API params: target_triangles, sampling_steps, texture_sampling_steps, voxel_resolution, shell_thickness_voxels, components(default tiny), minimum_component_area_ratio(default0.0001), normal_map, normal_resolution, colour_resolution, texture_padding, roughness, metallic."
+parameters:
+  model: trellis-clean-weights
+step: 10
+texture_steps: 16
+cfg_scale: 7.5
+grpc:
+  attempts: 60
+  attempts_sleep_time: 2

@@ -1,0 +1,16 @@
+Stable Fast 3D and Stable Point Aware 3D
+
+This Stability AI Model is licensed under the Stability AI Community License, Copyright © Stability AI Ltd. All Rights Reserved
+
+Stable Fast 3D source is based on Stability-AI/stable-fast-3d at
+ff21fc491b4dc5314bf6734c7c0dabd86b5f5bb2. Stable Point Aware 3D source is
+based on Stability-AI/stable-point-aware-3d at
+fdc311b16809e6a8adc2f5a3407ebb3db1a95bd1.
+
+This distribution adapts the source for Apple Silicon, including MPS
+attention and Metal texture baking, and adds LocalAI adapters for mesh
+reduction, UV unwrapping, and textured GLB export. The model checkpoints
+are obtained separately from Stability AI.
+
+The LocalAI gRPC bindings in shared/proto are derived from LocalAI. See
+shared/proto/LICENSE.md for the upstream MIT license.

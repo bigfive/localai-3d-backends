@@ -1,0 +1,12 @@
+name: sf3d-mps
+backend: sf3d-mps
+known_usecases:
+  - 3d
+description: "SF3D FP32 on Apple MPS: native geometry, albedo, smooth geometric normals and matte material. Baked predicted normal map, matte material. Auto only; Shape steps x1000 sets the triangle target (default 10000). Material steps ×32 = texture size, default 32 (1024px). Guidance/Seed blank."
+parameters:
+  model: sf3d-mps-weights
+step: 10
+texture_steps: 32
+grpc:
+  attempts: 60
+  attempts_sleep_time: 2

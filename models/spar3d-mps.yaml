@@ -1,0 +1,12 @@
+name: spar3d-mps
+backend: spar3d-mps
+known_usecases:
+  - 3d
+description: "SPAR3D on Apple MPS (FP32): point-conditioned geometry, albedo and predicted normals, matte material. Auto only. Shape steps x1000 sets the triangle target (default 10000); Material steps x32 gives both texture sizes (default 1024). Optional params.target_triangles reduces the mesh before rebaking. Point diffusion uses 32 steps. Guidance/Seed blank."
+parameters:
+  model: spar3d-mps-weights
+step: 10
+texture_steps: 32
+grpc:
+  attempts: 60
+  attempts_sleep_time: 2
